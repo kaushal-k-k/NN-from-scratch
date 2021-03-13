@@ -39,5 +39,38 @@ returns accuracy , loss
 ### accuracy(y_o : true label for x , y_p = predicted label for x )
 returns accuracy
 
+### forward_pass(x)
+to forward pass 
+
+### gradient(x,y)
+it calls forward pass and do the backward pass
+
+### onehot_encoding( y : true label for x, no of output classes)
+returns onehot array for y
+
+### add(d1 : dictionay , d2 : dictionay , m1 : mutiply to d1 , m2 : multiply to d2) 
+returns dictionary
+
+### mul(d1: dictionay , m1 : a no to multiply to d1)
+returns dictionay
+
+### squr(d1: dictinary)
+returns dictionar
+
+### adarate (d1:dict , d2 : dict , m1 : no , m2 : no ) 
+returns m1*d1/(m2*d2)
+
+# adding new optimizers
+use oW and ob to initialize weights and bias to zero for some new vaiable ex: dw = self.oW
+in some cases this might not work for that we can use the below code (when the variables are local):
+ v_w , v_b = {},{}
+ for i in range(self.nh+1):
+   v_w[i+1] = np.zeros((self.sizes[i], self.sizes[i+1]))
+   v_b[i+1] = np.zeros((1, self.sizes[i+1]))
+   
+  
+  
+
+
 
 
