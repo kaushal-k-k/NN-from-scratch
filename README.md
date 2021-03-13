@@ -68,7 +68,7 @@ in some cases this might not work for that we can use the below code (when the v
    v_w[i+1] = np.zeros((self.sizes[i], self.sizes[i+1]))
    v_b[i+1] = np.zeros((1, self.sizes[i+1]))
  
-# important : 
+## important : 
 once the weight update is done 
 copy this weights to self.tW with required modification(as the gradient are calculated for tW)
 this is helpful for the optimizers which calculates the derivative at look up like in nesterov gradient descent
@@ -76,6 +76,8 @@ so after doing W -= dw
 do self.tW = W + look ahed
 (see the availabel optimizers for better understanding)
 
+# to train the model
+call train()
 
    
    
