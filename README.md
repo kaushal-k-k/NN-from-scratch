@@ -64,9 +64,20 @@ returns m1*d1/(m2*d2)
 use oW and ob to initialize weights and bias to zero for some new vaiable ex: dw = self.oW
 in some cases this might not work for that we can use the below code (when the variables are local):
  v_w , v_b = {},{}
- for i in range(self.nh+1):
+ for i in range(self.no_hidden_layers+1):
    v_w[i+1] = np.zeros((self.sizes[i], self.sizes[i+1]))
    v_b[i+1] = np.zeros((1, self.sizes[i+1]))
+ 
+# important : 
+once the weight update is done 
+copy this weights to self.tW with required modification(as the gradient are calculated for tW)
+this is helpful for the optimizers which calculates the derivative at look up like in nesterov gradient descent
+so after doing W -= dw
+do self.tW = W + look ahed
+(see the availabel optimizers for better understanding)
+
+
+   
    
   
   
