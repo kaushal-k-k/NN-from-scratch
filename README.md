@@ -1,11 +1,7 @@
 # DL
-#pranay
-Q1
-Output: Report
-Code: 
-Q2
-#baki
-SAME CODE FOR Q3 to Q8:
+## Final code file is named as # final_dl_assignment1
+'''3k & sonagara'''
+
 # pass sweep parameter in sweep_config:
 
 # load_data() function is to load data
