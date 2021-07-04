@@ -2,6 +2,7 @@
 ## Final code file is named as # final_dl_assignment1
 '''3k & sonagara'''
 # report link : https://wandb.ai/sonagara/final1/reports/Assignment-1--Vmlldzo1MjUxNDI
+the problem descriptions are in the report link
 # pass sweep parameter in sweep_config:
 
 # load_data() function is to load data
